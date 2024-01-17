@@ -1,10 +1,16 @@
-import { useState, useEffect } from 'react'
-// import axios, { all } from 'axios'
 import './App.css'
-import FoodLog from '../pages/FoodLog'
+import { useState } from 'react'
+import FoodLog from '../components/FoodLog'
+// import FoodResults from '../components/FoodResults'
 
-function App() {
-  return <FoodLog />
+function App(props) {
+  const [searchResults, setSearchResults] = useState([])
+
+  return (
+    <div>
+      <FoodLog />
+    </div>
+  )
 }
 
 export default App
