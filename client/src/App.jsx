@@ -1,15 +1,18 @@
-import './App.css'
+import './index.css'
 import { useState } from 'react'
-import FoodLog from '../components/FoodLog'
-// import FoodResults from '../components/FoodResults'
 
+import Foodlog from '../pages/FoodLog'
+import Navbar from '../components/Navbar'
 function App(props) {
-  const [searchResults, setSearchResults] = useState([])
-
   return (
-    <div>
-      <FoodLog />
-    </div>
+    <>
+      <header>
+        <Navbar />
+      </header>
+      <main>
+        <Foodlog />
+      </main>
+    </>
   )
 }
 
